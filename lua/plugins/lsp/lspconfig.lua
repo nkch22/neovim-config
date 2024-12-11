@@ -32,6 +32,24 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+            ["stylua"] = function ()
+				nvim_lsp["stylua"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+            end,
+            ["clangd"] = function ()
+				nvim_lsp["clangd"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+            end,
+            ["zls"] = function ()
+				nvim_lsp["zls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+            end,
 			["jsonls"] = function()
 				nvim_lsp["jsonls"].setup({
 					on_attach = on_attach,
