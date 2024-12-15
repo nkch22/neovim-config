@@ -10,6 +10,7 @@ return {
 		require("mason-lspconfig").setup({
 			automatic_installation = true,
 			ensure_installed = {
+				"lua_ls",
 				"jsonls",
 				"pyright",
 				"clangd",
@@ -19,7 +20,6 @@ return {
 
 		require("mason-tool-installer").setup({
 			ensure_installed = {
-				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
 				"pylint",
